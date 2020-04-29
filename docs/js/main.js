@@ -111,6 +111,8 @@ var eachFeatureFunction = function(layer) {
       var parsedData = JSON.parse(data);
       var pos = parsedData.positive[name];
       var neg = parsedData.negative[name];
+      pos = Math.round(pos);
+      neg = Math.round(neg);
       testData_1 = [pos,neg];
       console.log(stateName,name,pos,neg);
 
